@@ -1,0 +1,17 @@
+{
+  "name": "sauce-connect",
+  "keywords": ["selenium", "selenese", "browser-automation", "sauce", "saucelabs", "sauce-labs"],
+  "version": "0.1.0",
+  "sauce-connect-url": "http://saucelabs.com/downloads/Sauce-Connect-latest.zip",
+  "description": "Node.js wrapper over the SauceLabs SauceConnect.jar program for establishing a secure tunnel for intranet testing",
+  "main": "lib/sauce-connect.coffee",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "env": "env",
+    "install": "make install"
+  },
+  "author": "Dave Dopson <ddopson@gmail.com>",
+  "license": "WTFPL"
+}
