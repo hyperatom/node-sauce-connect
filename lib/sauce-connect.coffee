@@ -20,7 +20,7 @@ class SauceConnect
     child.stdout.on 'data', _on_data = (data) ->
       data = "#{data}"
       process.stdout.write(data)
-      if data.match /You may start your tests/
+      if data.match /Connected! You may start your tests/
         callback?()
     
     child.stderr.on 'data', _on_data
