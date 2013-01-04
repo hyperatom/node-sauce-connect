@@ -18,8 +18,8 @@ class SauceConnect
 
     child = ChildProcess.spawn 'java', args
     child.stdout.on 'data', _on_data = (data) ->
-      data = "#{data}"
-      process.stdout.write(data)
+      data = data.toString('utf8').replace(/\n$/m, '')
+      console.log(data)
       if data.match /Connected! You may start your tests/
         callback?()
     
