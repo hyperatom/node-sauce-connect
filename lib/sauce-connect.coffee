@@ -25,6 +25,6 @@ class SauceConnect
     
     child.stderr.on 'data', _on_data
 
-    process.on 'exit' =>
+    process.on 'exit', =>
       child.kill()
 
