@@ -16,6 +16,8 @@ class SauceConnect
       if v
         args.push "#{v}"
 
+    console.log('Connecting to SauceLabs, please be patient...')
+
     child = ChildProcess.spawn 'java', args
     child.stdout.on 'data', _on_data = (data) ->
       data = data.toString('utf8').replace(/\n$/m, '')
